@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+}
+
+h1{
+    color: red;
+}
+#verde{
+    background-color: green;
+    border-radius: 50%;
+}
+
+#rojo{
+    background-color: red;
+    border-radius: 10px;
+}
+
+#azul{
+    background-color: blue;
+    border-radius: 30px;
+}
+#container{
+    width: 100vw;
+    height: 100vw;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;  /* horizontal */
+    align-items: center;     /* vertical */
+    display: wrap;
+    gap: 10px;
+}
+
+.hijo{
+    width: 100px;
+    height: 100px;    
+}
