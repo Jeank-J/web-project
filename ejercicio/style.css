@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+
+}
+
+body{
+    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: black;
+}
+
+#container{
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    display: wrap;
+    background-color: blue;
+}
+
+.cuadros{
+    display: flex;
+    flex-direction: row;
+    display: wrap;
+    gap: 20px;
+}
+.circulos{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.a1{
+    
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+}
+
+.a2{
+    
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50px;  
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.mini{
+    width: 30px;
+    height: 30px;
+    background-color: orangered;
+}
+
