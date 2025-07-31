@@ -32,7 +32,7 @@ body{
 .cuadros{
     display: flex;    
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
     gap: 20px;
 }
 .circulos{
