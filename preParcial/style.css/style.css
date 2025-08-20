@@ -1,0 +1,121 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: green;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+div{
+    display: none;
+    background-color: rgb(255, 251, 0);    
+    width: 5%;
+    height: 50%;
+    border: solid #fa0000;
+}
+nav{
+    background-color: red;
+    width: 100%;
+    height: 5%;
+}
+main{
+    background-color: yellow;
+    width: 100%;
+    height: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+section{
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    gap: 20px;
+}
+article{
+    background-color: rgb(202, 199, 199);
+    width: 100%;
+    height: 100%;
+}
+
+aside{
+    background-color: rgb(132, 195, 255);
+    width: 100%;
+    height: 5%;    
+}
+
+footer{
+    background-color: rgb(201, 143, 255);
+    width: 100%;
+    height: 10%;
+}
+
+@media (min-width: 769px){
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 2fr 3fr 3fr;
+        /*grid-template-rows: 10% 25% 75% 10%;*/
+        /*grid-template-rows: 10% 5% 75% 10%;*/
+        grid-template-rows: 2fr 1fr 6fr 2fr;
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "aside main main"
+            "footer footer footer"
+        ;
+    }
+    header{
+        grid-area: header;           
+        width: 100%;     
+        height: 100%;
+    }
+    nav{
+        grid-area: nav;
+        width: 100%;     
+        height: 100%;
+    }
+    aside{
+        grid-area: aside;
+        width: 100%;     
+        height: 100%;
+    }
+    main{
+        grid-area: main;
+        width: 100%;     
+        height: 100%;
+    }
+    footer{
+        grid-area: footer;
+        width: 100%;     
+        height: 100%;
+    }
+    section{
+        flex-direction: row;
+        padding: 25px 15px;
+    }    
+    div{
+        display: block;
+    }
+}
