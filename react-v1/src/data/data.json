@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Montañas",
+    "description": "Un paisaje tranquilo en medio de las montañas.",
+    "image": "https://picsum.photos/id/1018/400/250"
+  },
+  {
+    "id": 2,
+    "title": "Ciudad nocturna",
+    "description": "Luces de la ciudad iluminando la noche.",
+    "image": "https://picsum.photos/id/1015/400/250"
+  },
+  {
+    "id": 3,
+    "title": "Playa tropical",
+    "description": "Arena blanca y un mar cristalino.",
+    "image": "https://picsum.photos/id/1016/400/250"
+  },
+  {
+    "id": 4,
+    "title": "Bosque",
+    "description": "La calma de un bosque frondoso.",
+    "image": "https://picsum.photos/id/1011/400/250"
+  },
+  {
+    "id": 5,
+    "title": "Carretera solitaria",
+    "description": "Un viaje sin fin hacia el horizonte.",
+    "image": "https://picsum.photos/id/1020/400/250"
+  },
+  {
+    "id": 5,
+    "title": "Konoha",
+    "description": "Aldea oculta entre las hojas, pais del fuego",
+    "image": "/img/konoha.jpg"
+  }
+]
