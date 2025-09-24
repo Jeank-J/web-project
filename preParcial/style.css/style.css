@@ -25,7 +25,7 @@ div{
     background-color: rgb(255, 251, 0);    
     width: 5%;
     height: 50%;
-    border: solid #fa0000;
+    border: solid 7px #fa0000;
 }
 nav{
     background-color: red;

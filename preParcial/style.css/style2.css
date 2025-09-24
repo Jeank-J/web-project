@@ -1,0 +1,126 @@
+/* start: 8:02 */
+/* end: 8:21 */
+
+*{
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+header, main, aside, section, article, div, nav{    
+    border: solid 1px #000;
+    flex: 1;
+}
+
+header{
+    background-color: rgb(9, 9, 113);
+}
+nav{
+    background-color: rgb(191, 52, 24);
+}
+aside{
+    background-color: rgb(115, 115, 191);
+}
+main{
+    background-color: rgb(17, 17, 44);
+}
+article{
+    background-color: rgb(196, 193, 10);
+}
+section{
+    background-color: rgb(62, 196, 78);
+}
+div{
+    background-color: rgb(144, 190, 199);
+}
+
+@media (min-width: 400px) and (max-width: 700px){
+    body{
+        display: grid;
+        grid-template-columns: 1fr 3fr 2fr;
+        grid-template-rows: 1fr 4fr 4fr 2fr 2fr;
+        grid-template-areas:
+            "header header header"
+            "aside aside aside"
+            "nav main main"
+            "nav article article"
+            "nav section div"
+        ;
+    }
+    header, main, aside, section, article, div, nav{    
+        width: 100%;
+        height: 100%;        
+    }
+    header{
+        grid-area: header;
+    }
+    nav{
+        grid-area: nav;
+    }
+    aside{
+        grid-area: aside;
+    }
+    main{
+        grid-area: main;
+    }
+    article{
+        grid-area: article;
+    }
+    section{
+        grid-area: section;
+    }
+    div{
+        grid-area: div;
+    }
+}
+
+
+@media (min-width: 701px) {
+    body{
+        display: grid;        
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 7fr 2fr 2fr 2fr;
+        grid-template-areas:
+            "header nav nav nav"
+            "aside aside aside aside"
+            "main main . div"            
+            "main main . section"            
+            "article article article article"
+        ;
+    }
+    header, main, aside, section, article, div, nav{    
+        width: 100%;
+        height: 100%;        
+        border: solid 2px #000;
+    }
+    header{
+        grid-area: header;
+    }
+    nav{
+        grid-area: nav;
+    }
+    aside{
+        grid-area: aside;
+    }
+    main{
+        grid-area: main;
+    }
+    article{
+        grid-area: article;
+    }
+    section{
+        grid-area: section;
+    }
+    div{
+        grid-area: div;
+    }
+}
